@@ -1,7 +1,7 @@
 import streamlit as st
 import torch
 import numpy as np
-from model import GoogleNet
+from model import CNN
 from torchvision import transforms
 import torch.nn.functional as F
 import io
@@ -40,7 +40,7 @@ if img_file_buffer is not None:
         torch_img = torch_img.unsqueeze(0)  
 
 
-        model = GoogleNet()
+        model = CNN()
         state_dict = torch.load('./model_weight.pth', map_location=torch.device('cpu'))
         model.load_state_dict(state_dict)
 
