@@ -4,9 +4,9 @@ import numpy as np
 import scipy
 from torch.nn import functional as F
 
-class GoogleNet(nn.Module):
+class CNN(nn.Module):
     def __init__(self):
-        super(GoogleNet, self).__init__()
+        super(CNN, self).__init__()
         self.conv_layers = nn.Sequential(
             nn.Conv2d(3, 32, kernel_size=3, padding=1),
             nn.BatchNorm2d(32),
