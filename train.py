@@ -6,7 +6,7 @@ import os
 from torchvision import transforms
 import numpy as np
 
-from model import GoogleNet
+from model import CNN
 from data import FruitData
 
 def init_weights(layer):
@@ -36,7 +36,7 @@ def main():
     train_loader = torch.utils.data.DataLoader(training_set, batch_size=64, shuffle=True)
     test_loader = torch.utils.data.DataLoader(testing_set, batch_size=64, shuffle=True)
 
-    model = GoogleNet()
+    model = CNN()
     model.apply(init_weights)
 
     optimizer = optim.SGD(model.parameters(), lr=0.001, momentum=0.90)
