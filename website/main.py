@@ -11,5 +11,5 @@ pages = {
     ],
 }
 
-pg = st.navigation(pages)
-pg.run()
+web = st.navigation(pages)
+web.run()

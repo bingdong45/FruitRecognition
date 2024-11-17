@@ -11,5 +11,5 @@ Rate our program
 
 st.markdown(multi)
 
-selected = st.feedback("stars")
+rating = st.feedback("stars")
 

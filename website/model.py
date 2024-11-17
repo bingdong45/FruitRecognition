@@ -23,7 +23,6 @@ class GoogleNet(nn.Module):
             nn.ReLU(),
             nn.MaxPool2d(2),
 
-            # Additional layers
             nn.Conv2d(128, 256, kernel_size=3, padding=1),
             nn.BatchNorm2d(256),
             nn.ReLU(),
