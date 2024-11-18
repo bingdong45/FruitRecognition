@@ -18,6 +18,10 @@ This classification model is implemented using a CNN that contains 5 convolution
 
 ## Setup Instructions
 1. Go to your working directory and clone this repository: git clone https://github.com/bingdong45/FruitRecognition.git
-2. 
+2. Create a virtual environment and run in the working directory: pip install -r requirements.txt 
+3. Run this to run the streamlit app: streamlit run ./website/main.py
+4. Run the train.py file to train the model, a pth file for model weight will be generated in a ./weights folder
 
 ## Dataset
+We used this dataset from kaggle: https://www.kaggle.com/datasets/karimabdulnabi/fruit-classification10-class?select=MY_data
+It contains fruit images from 10 categories
